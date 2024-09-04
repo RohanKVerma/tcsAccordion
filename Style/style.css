@@ -87,13 +87,14 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: all 0.5s ease-in-out;
 }
 
 .accordionBody {
   margin-top: 2rem;
   width: 100%;
   overflow: hidden;
-  transition: 0.5s;
+  transition: all 0.5s ease-in-out;
   position: relative;
   height: 0;
 }
@@ -138,4 +139,8 @@ body {
   height: -moz-max-content;
   height: max-content;
   transition: 0.5s;
+}
+
+.active .heading .collapseBtn {
+  rotate: 180deg;
 }/*# sourceMappingURL=style.css.map */
