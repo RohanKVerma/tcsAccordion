@@ -110,7 +110,7 @@ body {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   position: relative;
-  height: 0;
+  max-height: 0;
 }
 
 .gridContainer {
@@ -133,7 +133,7 @@ body {
 
 .gridItem {
   font-size: 1rem;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   width: 10rem;
   height: 6rem;
   padding: 0.4rem;
@@ -150,9 +150,8 @@ body {
 }
 
 .active .accordionBody {
-  height: -moz-max-content;
-  height: max-content;
-  transition: 0.5s;
+  max-height: 1000vh;
+  transition: 0.5s ease-in-out;
 }
 
 .active .heading .collapseBtn {
