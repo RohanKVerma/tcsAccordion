@@ -1,0 +1,37 @@
+@import 'mixin';
+@import 'variable';
+
+// Grid
+.gridContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: max-content;
+      gap: -10px;
+    
+      @include media-breakpoint($breakpoint-md) {
+        grid-template-columns: 1fr 1fr;
+      }
+    
+      @include media-breakpoint($breakpoint-sm) {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .gridItem {
+      font-size: $font-size-base;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      color: $primary-color;
+      width: 10rem;
+      height: 6rem;
+      padding: 0.4rem;
+    
+      @include media-breakpoint($breakpoint-sm) {
+        width: 70vw;
+      }
+    }
+    
+    .ctaLink {
+      padding: 0.2rem;
+      color: $secondary-color;
+      text-decoration: underline;
+    }

@@ -1,4 +1,4 @@
-const accordionItems = document.querySelectorAll('.accordionItem');
+const accordionItems = document.querySelectorAll('.accordionContainer .accordionItem');
 accordionItems.forEach(item => {
       item.classList.remove('active');
            

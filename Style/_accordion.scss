@@ -1,0 +1,75 @@
+@import 'mixin';
+@import 'variable';
+// Accordion
+.accordionContainer {
+      width: 80vw;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      @include flex-center;
+      flex-direction: column;
+    }
+    
+    .accordionItem {
+      width: 100%;
+      padding: 1rem;
+      @include flex-center;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom: 1px solid $secondary-color;
+      position: relative;
+      margin: 10px 10px;
+    }
+    
+    .heading {
+      width: 100%;
+      @include flex-center;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      padding: 10px 0;
+      font-size: $font-size-large;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+    
+    .accordionTitle {
+      @include flex-center;
+    }
+    
+    .count {
+      margin-right: 0.4rem;
+      font-weight: 800;
+      font-size: $font-size-extra-large;
+      color: $primary-color;
+      @include media-breakpoint($breakpoint-md) {
+        font-size: 2.5rem;
+      }
+    
+      @include media-breakpoint($breakpoint-sm) {
+        font-size: 2rem;
+      }
+    }
+    
+    .title {
+      font-size: $font-size-large;
+    
+      @include media-breakpoint($breakpoint-md) {
+        font-size: 1.5rem;
+      }
+    }
+    
+    .collapseBtn {
+      background-color: $white;
+      @include flex-center;
+      border-radius: 50%;
+      @include transition(all, 0.5s, ease-in-out);
+    }
+    
+    .accordionBody {
+      margin-top: 2rem;
+      width: 100%;
+      overflow: hidden;
+      @include transition(all, 0.5s, ease-in-out);
+      position: relative;
+      max-height: 0;
+    }

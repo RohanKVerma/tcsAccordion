@@ -1,0 +1,11 @@
+@import 'mixin';
+@import 'variable';
+
+// Header
+.header {
+      width: 100vw;
+      background-color: $secondary-color;
+      color: $white;
+      padding: 0.5rem;
+    }
+    
